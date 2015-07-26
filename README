@@ -1,0 +1,23 @@
+Welcome to the Relocate Element Plugin!
+
+=== DESCRIPTION ===
+This plugin provides an action in pcb that will take all selected elements and stack them up at the current crosshairs.  This works well when starting a new layout and you have hundreds of parts on your workspace and you're just starting to do your component placement.  Use Select Element by Name (refdes) to select the elements you want to move, and then use :relocate() to set the position of those elements to where ever your crosshair is.
+
+=== BUILDING ===
+There are two variables in the top of the Makefile you'll need to set.. 
+1) the location of the pcb source directory, and
+2) the install directory you want the plugin to go to. (By default, this has to be ~/.pcb/plugins)
+
+After that, type "make all install" to build.
+
+=== USAGE ===
+1) Select the element you wish to move by whatever means.
+2a) Press : to bring up the command entry dialog, and enter relocate()
+2b) Bind relocate() to a key in your ~/.pcb/gpcb-menu.res
+     {"Relocate selected elements" relocate() a={"r" "<Key>r"}}
+
+=== TODO ===
+- Right now, if multiple elements are selected, they are all are stacked up on top of each other.  Instead make them spread out the way Disperse Elements does.
+
+=== WANTED ===
+I don't really know anything about compiling code on Windows.  If anyone is interested in providing a patch to make this happen, please contact me!
