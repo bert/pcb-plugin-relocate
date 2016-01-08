@@ -3,7 +3,7 @@
  *
  * \brief Relocate plug-in for PCB.
  *
- * \author Jean Walker <jean@geemoo.ca>
+ * \author Jean Richard <jean@geemoo.ca>
  *
  * Licensed under the terms of the GNU General Public License, version
  * 2 or later.
